@@ -6,7 +6,10 @@ Rest Todo Api is a simple Django rest app to use todo api.
 
 Quick start
 -----------
-1. Add 'rest_todo_api', 'rest_framework', 'django_filters' to your INSTALLED_APPS setting like this::
+1. Install django-rest-todo-api by pip.
+  $ pip install https://github.com/Saknowman/django-rest-todo-api/blob/master/dist/django-rest-todo-api-0.1.tar.gz
+
+2. Add 'rest_todo_api', 'rest_framework', 'django_filters' to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
@@ -15,7 +18,7 @@ Quick start
         'rest_todo_api',
     ]
 
-2. Add settings for Rest Framework like this::
+3. Add settings for Rest Framework like this::
 
     REST_FRAMEWORK = {
         'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
@@ -25,7 +28,7 @@ Quick start
         'PAGE_SIZE': 10
     }
 
-3. Include the rest_todo_api URLconf in your project urls.py like this::
+4. Include the rest_todo_api URLconf in your project urls.py like this::
 
     from rest_todo_api.urls import router as rest_todo_api_router
 
@@ -34,9 +37,9 @@ Quick start
       url(r'^api/todo/', include(rest_todo_api_router.urls)),
     ]
 
-4. Run `python manage.py migrate` to create the rest_todo_api models.
+5. Run `python manage.py migrate` to create the rest_todo_api models.
 
-5. Start the development server and visit http://127.0.0.1:8000/admin/
+6. Start the development server and visit http://127.0.0.1:8000/admin/
    to create some status, tags, then tasks (you'll need the Admin app enabled).
 
    ex)
@@ -51,4 +54,4 @@ Quick start
       "value": "Shopping"
    }
 
-6. Visit http://127.0.0.1:8000/api/ to see api resources.
+7. Visit http://127.0.0.1:8000/api/ to see api resources.
