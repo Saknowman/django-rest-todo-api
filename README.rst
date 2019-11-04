@@ -7,7 +7,7 @@ Rest Todo Api is a simple Django rest app to use todo api.
 Quick start
 -----------
 1. Install django-rest-todo-api by pip.
-  $ pip install https://github.com/Saknowman/django-rest-todo-api/blob/master/dist/django-rest-todo-api-0.1.tar.gz
+  $ pip install https://github.com/Saknowman/django-rest-todo-api/raw/master/dist/django-rest-todo-api-0.1.tar.gz
 
 2. Add 'rest_todo_api', 'rest_framework', 'django_filters' to your INSTALLED_APPS setting like this::
 
