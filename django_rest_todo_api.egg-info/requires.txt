@@ -1,2 +1,2 @@
-django-restframework
+djangorestframework
 django-filter
